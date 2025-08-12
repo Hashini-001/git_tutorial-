@@ -1,3 +1,203 @@
-hello
+Microsoft Windows [Version 10.0.26100.4652]
+(c) Microsoft Corporation. All rights reserved.
 
-hiiiiiii 
+C:\Users\Asus Expertbook\Desktop\GitHub>git init
+Initialized empty Git repository in C:/Users/Asus Expertbook/Desktop/GitHub/.git/
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "4. Micro\342\200\221Climate Strip.pdf"
+        ChatGPT Image Aug 12, 2025, 09_34_15 AM.png
+        githubTest/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git add .
+warning: adding embedded git repository: githubTest
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> githubTest
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached githubTest
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   "4. Micro\342\200\221Climate Strip.pdf"
+        new file:   ChatGPT Image Aug 12, 2025, 09_34_15 AM.png
+        new file:   githubTest
+
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git commit -m "first commit"
+[master (root-commit) 0baa04c] first commit
+ 3 files changed, 1 insertion(+)
+ create mode 100644 "4. Micro\342\200\221Climate Strip.pdf"
+ create mode 100644 ChatGPT Image Aug 12, 2025, 09_34_15 AM.png
+ create mode 160000 githubTest
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Screenshot 2025-08-12 115334.png
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git add .
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Screenshot 2025-08-12 115334.png
+
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git commit -m "first commit"
+[master 735d2f2] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Screenshot 2025-08-12 115334.png
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git add .
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   New Text Document.txt
+
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   New Text Document.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   New Text Document.txt
+
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git commit -m "modified"
+[master e8116c4] modified
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 New Text Document.txt
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   New Text Document.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git add .
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   New Text Document.txt
+
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git log
+commit e8116c4dcfef376be82a0d62eb885bed2b178802 (HEAD -> master)
+Author: Hashini Gunarathne <hashigunarathne912@gmail.com>
+Date:   Tue Aug 12 12:01:40 2025 +0530
+
+    modified
+
+commit 735d2f22865dd05c99114241c8c6eecd09d9cbac
+Author: Hashini Gunarathne <hashigunarathne912@gmail.com>
+Date:   Tue Aug 12 11:59:43 2025 +0530
+
+    first commit
+
+commit 0baa04c3542e5203c806f1f07e9d328c2245382f
+Author: Hashini Gunarathne <hashigunarathne912@gmail.com>
+Date:   Tue Aug 12 11:57:12 2025 +0530
+
+    first commit
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git log --oneline
+e8116c4 (HEAD -> master) modified
+735d2f2 first commit
+0baa04c first commit
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git remote add origin https://github.com/Hashini-001/git_tutorial-.git
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git remote -v
+origin  https://github.com/Hashini-001/git_tutorial-.git (fetch)
+origin  https://github.com/Hashini-001/git_tutorial-.git (push)
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Hashini-001/git_tutorial-.git'
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git push -u origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 2.22 MiB | 84.00 KiB/s, done.
+Total 10 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Hashini-001/git_tutorial-/pull/new/master
+remote:
+To https://github.com/Hashini-001/git_tutorial-.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git add .
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git commit -m "hello"
+[master afd6795] hello
+ 1 file changed, 1 insertion(+)
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 264 bytes | 88.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Hashini-001/git_tutorial-.git
+   e8116c4..afd6795  master -> master
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 7 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (7/7), 2.41 KiB | 53.00 KiB/s, done.
+From https://github.com/Hashini-001/git_tutorial-
+   afd6795..13aec54  master     -> origin/master
+ * [new branch]      main       -> origin/main
+Updating afd6795..13aec54
+Fast-forward
+ New Text Document.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\Asus Expertbook\Desktop\GitHub>git push -u origin maingit push -u origin main
